@@ -1,4 +1,4 @@
-name="TODO Mod Template"
+name="Psionic Ascension: Even in Other Empires"
 tags={
 	"Events"
 	"Gameplay"
