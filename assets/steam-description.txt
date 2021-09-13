@@ -7,13 +7,13 @@ Have you ever noticed that the notification event when other empires pick the "M
 The notification event when another empire picks "Mind Over Matter" ends with
 
 [quote]
-The \<Mind Over Matter species\> population within our borders have [b][i]begun exhibiting similar changes as well,[/i][/b] so whatever is happening to their species is [b][i]not localized to any single region of space[/i][/b]" [emphases added]
+The <Mind Over Matter species> population within our borders have [b][i]begun exhibiting similar changes as well,[/i][/b] so whatever is happening to their species is [b][i]not localized to any single region of space[/i][/b]" [emphases added]
 [/quote]
 
 and the notification for empires picking "Transcendence" mentions that
 
 [quote]
-"[b][i]All \<Transcendence species\> throughout the galaxy have undergone a great change.[/i][/b] Whereas before their latent psionic power had only blossomed in a small minority, the entire species has now unlocked its full psychic potential. Although these changes seem to have originated in the <Transcendence empire>, [b][i]they have now manifested in all members of their species regardless of where they reside[/i][/b]" [emphasis added]
+"[b][i]All <Transcendence species> throughout the galaxy have undergone a great change.[/i][/b] Whereas before their latent psionic power had only blossomed in a small minority, the entire species has now unlocked its full psychic potential. Although these changes seem to have originated in the <Transcendence empire>, [b][i]they have now manifested in all members of their species regardless of where they reside[/i][/b]" [emphasis added]
 [/quote]
 
 This mod does exactly what this original-to-the-game text says: any members of the newly Latent Psionic or Psionic species gain the appropriate species traits regardless of which empire controls them.
