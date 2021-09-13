@@ -24,7 +24,7 @@ Built for Stellaris version 3.0.* "Dick."
 
 Preempts the [b]utopia.2600[/b] event that is responsible for the initial species upgrade with the Latent Psionic trait and [b]utopia.2650[/b] event that is responsible for the initial species upgrade with the Psionic trait.  That means this mod is likely to conflict with other mods that want to alter the conversion process for normal -> latent psionic and/or latent psionic -> psionic.
 
-Mods altering or allowing assimilation/ascension with different conditions aren't always a conflict.  For example [Two and half Ascension by kERHUS [RELOADED]](https://steamcommunity.com/sharedfiles/filedetails/?id=2373793047) has no conflicts.
+Mods altering or allowing assimilation/ascension with different conditions aren't always a conflict.  For example [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2373793047][Two and half Ascension by kERHUS [RELOADED]][/url] has no conflicts.
 
 Not compatible with achievements.
 
@@ -47,7 +47,7 @@ This mod overwrites preempts two events from the base game.  Expect to see two l
 
 [h2]Changelog[/h2]
 
-See [url=]Change Notes[/url]
+See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2601239912]Change Notes[/url]
 
 [h2]Source Code[/h2]
 
