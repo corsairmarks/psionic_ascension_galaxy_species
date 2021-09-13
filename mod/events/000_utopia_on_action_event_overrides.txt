@@ -119,19 +119,36 @@ country_event = {
 			}
 			country_event = { id = utopia.2602 }
 		}
+		create_leader = {
+			species = owner_species
+			set_age = 1
+			effect = {
+				set_name = trait_latent_psionic
+				save_event_target_as = trait_add_leader
+			}
+		}
 	}
 	option = {
 		name = utopia.2600.a
-		tooltip = {
-			owner_species = {
-				modify_species = {
-					species = THIS
-					add_trait = trait_latent_psionic
-				}
+		custom_tooltip_with_params = {
+			description = MODIFY_GALAXY_SPECIES_ADD
+			description_parameters = {
+				SPECIES = "[owner_species.GetName]"
+				TRAIT = "[trait_add_leader.GetName]"
 			}
 		}
 		custom_tooltip = ALLOW_PSI_CORPS
 		custom_tooltip = ALLOW_PSI_ARMIES
+	}
+	after = {
+		hidden_effect = {
+			event_target:trait_add_leader = {
+				kill_leader = {
+					show_notification = no
+					fire = yes
+				}
+			}
+		}
 	}
 }
 
@@ -210,7 +227,7 @@ country_event = {
 				}
 			}
 			every_country = {
-				limit = { any_owned_pop = { species = { is_exact_same_species = event_target:root_non_psionic_species } } }
+				limit = { any_owned_pop = { species = { is_exact_same_species = event_target:root_latent_psionic_species } } }
 				every_owned_pop = {
 					limit = { is_exact_same_species = event_target:latent_psionic_species }
 					change_species = event_target:psionic_species
@@ -256,15 +273,46 @@ country_event = {
 			days = 30
 			random = 20
 		}
+		create_leader = {
+			species = owner_species
+			set_age = 1
+			effect = {
+				set_name = trait_latent_psionic
+				save_event_target_as = trait_remove_leader
+			}
+		}
+		create_leader = {
+			species = owner_species
+			set_age = 1
+			effect = {
+				set_name = trait_psionic
+				save_event_target_as = trait_add_leader
+			}
+		}
 	}
 	option = {
 		name = utopia.2650.a
-		tooltip = {
-			owner_species = {
-				modify_species = {
-					species = THIS
-					remove_trait = trait_latent_psionic
-					add_trait = trait_psionic
+		custom_tooltip_with_params = {
+			description = MODIFY_GALAXY_SPECIES
+			description_parameters = {
+				SPECIES = "[owner_species.GetName]"
+				TRAIT_REMOVE = "[trait_remove_leader.GetName]"
+				TRAIT_ADD = "[trait_add_leader.GetName]"
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			event_target:trait_remove_leader = {
+				kill_leader = {
+					show_notification = no
+					fire = yes
+				}
+			}
+			event_target:trait_add_leader = {
+				kill_leader = {
+					show_notification = no
+					fire = yes
 				}
 			}
 		}
