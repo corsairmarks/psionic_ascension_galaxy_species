@@ -51,6 +51,6 @@ See [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2601239912
 
 [h2]Source Code[/h2]
 
-Hosted on [url=https://github.com/corsairmarks/psionic_assimilation_galaxy_species]GitHub[/url]
+Hosted on [url=https://github.com/corsairmarks/psionic_ascension_galaxy_species]GitHub[/url]
 
 [url=https://discord.gg/bHVez2C][img]https://i.imgur.com/4Und3QN.png[/img][/url]

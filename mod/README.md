@@ -47,7 +47,7 @@ This mod overwrites preempts two events from the base game.  Expect to see two l
 
 ## Source Code
 
-Hosted on [GitHub](https://github.com/corsairmarks/psionic_assimilation_galaxy_species)
+Hosted on [GitHub](https://github.com/corsairmarks/psionic_ascension_galaxy_species)
 
 ### Development Notes
 
