@@ -120,6 +120,7 @@ country_event = {
 			country_event = { id = utopia.2602 }
 		}
 		create_leader = {
+			class = random
 			species = owner_species
 			set_age = 1
 			effect = {
@@ -274,6 +275,7 @@ country_event = {
 			random = 20
 		}
 		create_leader = {
+			class = random
 			species = owner_species
 			set_age = 1
 			effect = {
@@ -282,6 +284,7 @@ country_event = {
 			}
 		}
 		create_leader = {
+			class = random
 			species = owner_species
 			set_age = 1
 			effect = {
