@@ -37,8 +37,8 @@ This mod can be safely added to or removed from your savegame after the game has
 This mod overwrites preempts two events from the base game.  Expect to see two lines in error.log like this:
 
 ```
-[23:17:20][eventmanager.cpp:355]: an event with id [utopia.2600] already exists!  file: events/utopia_on_action_events.txt line: 1292
-[23:17:20][eventmanager.cpp:355]: an event with id [utopia.2650] already exists!  file: events/utopia_on_action_events.txt line: 1551
+[23:17:20][eventmanager.cpp:355]: an event with id [utopia.2600] already exists!  file: events/utopia_on_action_events.txt line: 1328
+[23:17:20][eventmanager.cpp:355]: an event with id [utopia.2650] already exists!  file: events/utopia_on_action_events.txt line: 1587
 ```
 
 ## Changelog
