@@ -119,13 +119,15 @@ country_event = {
 			}
 			country_event = { id = utopia.2602 }
 		}
-		create_leader = {
-			class = random
-			species = owner_species
-			set_age = 1
-			effect = {
-				set_name = trait_latent_psionic
-				save_event_target_as = trait_add_leader
+		event_target:global_event_country = {
+			create_leader = {
+				class = random
+				species = PREV.owner_species
+				set_age = 1
+				effect = {
+					set_name = trait_latent_psionic
+					save_event_target_as = trait_add_leader
+				}
 			}
 		}
 	}
@@ -274,22 +276,24 @@ country_event = {
 			days = 30
 			random = 20
 		}
-		create_leader = {
-			class = random
-			species = owner_species
-			set_age = 1
-			effect = {
-				set_name = trait_latent_psionic
-				save_event_target_as = trait_remove_leader
+		event_target:global_event_country = {
+			create_leader = {
+				class = random
+				species = PREV.owner_species
+				set_age = 1
+				effect = {
+					set_name = trait_latent_psionic
+					save_event_target_as = trait_remove_leader
+				}
 			}
-		}
-		create_leader = {
-			class = random
-			species = owner_species
-			set_age = 1
-			effect = {
-				set_name = trait_psionic
-				save_event_target_as = trait_add_leader
+			create_leader = {
+				class = random
+				species = PREV.owner_species
+				set_age = 1
+				effect = {
+					set_name = trait_psionic
+					save_event_target_as = trait_add_leader
+				}
 			}
 		}
 	}
