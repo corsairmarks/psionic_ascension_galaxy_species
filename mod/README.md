@@ -44,6 +44,7 @@ This mod overwrites preempts two events from the base game.  Expect to see two l
 * 1.0.0 Initial version
 * 1.1.0 Mark as compatible for Stellaris 3.1 "Lem" - no functionality changes
 * 1.2.0 Mark as compatible for Stellaris 3.2 "Herbert" - no script changes
+* 1.2.1 Fix not properly iterating all subspecies
 
 ## Source Code
 
