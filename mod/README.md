@@ -20,7 +20,7 @@ Preempts the `utopia.2600` event that is responsible for the initial species upg
 
 Mods altering or allowing assimilation/ascension with different conditions aren't always a conflict.  For example [Two and half Ascension by kERHUS [RELOADED]](https://steamcommunity.com/sharedfiles/filedetails/?id=2373793047) has no conflicts.
 
-Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
+Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements.
 
 ### Required Mod Dependencies
 
@@ -46,6 +46,9 @@ This mod overwrites preempts two events from the base game.  Expect to see two l
 * 1.2.0 Mark as compatible for Stellaris 3.2 "Herbert" - no script changes
 * 1.2.1 Fix not properly iterating all subspecies
 * 1.3.0 Mark as compatible for Stellaris 3.3 "Libra" - no script changes
+* 2.0.0 Update for Stellaris version 3.4 "Cepheus"
+    * Update code to account for hired (mercenary) fleets
+    * Integrate underlying game change to account for the Shroudwalker enclave
 
 ## Source Code
 

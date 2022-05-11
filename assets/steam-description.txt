@@ -17,7 +17,7 @@ Preempts the [b]utopia.2600[/b] event that is responsible for the initial specie
 
 Mods altering or allowing assimilation/ascension with different conditions aren't always a conflict.  For example [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2373793047][Two and half Ascension by kERHUS [RELOADED]][/url] has no conflicts.
 
-Built for Stellaris version 3.3 "Libra."  Not compatible with achievements.
+Built for Stellaris version 3.4 "Cepheus."  Not compatible with achievements.
 
 [h3]Required Mod Dependencies[/h3]
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2499031295]Leader Traits: All Eligible Species Traits[/url] - this mod ensures your leaders always gain the correct leader traits (such as Psionic) and contains a minor enhancement that leaders of [i]any[/i] Latent Psionic species have a chance to manifest full Psionic powers and gain the appropriate leader trait. This was previously restricted to occur for leaders that are both Latent Psionic and the same species as the empire's founder species.
