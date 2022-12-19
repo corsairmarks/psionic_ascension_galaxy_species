@@ -1,6 +1,6 @@
 namespace = utopia
 
-# Mind Over Matter
+# Psionics traditions adopt
 country_event = {
 	id = utopia.2600
 	title = utopia.2600.name
@@ -9,13 +9,15 @@ country_event = {
 	show_sound = event_mind_over_matter
 	is_triggered_only = yes
 	trigger = {
+		has_tradition = tr_psionics_adopt
 		owner_species = {
 			is_sapient = yes
-			is_organic_species = yes
-			NOR = {
-				has_trait = trait_latent_psionic
-				has_trait = trait_psionic
+			is_robotic_species = no
+			OR = {
+				has_global_flag = deassimilate_machines_installed
+				NOT ={ has_trait = trait_cybernetic }
 			}
+			has_psionic_species_trait = no
 		}
 	}
 	immediate = {
@@ -48,6 +50,13 @@ country_event = {
 			random_galaxy_species = {
 				limit = {
 					is_same_species = event_target:root_non_psionic_species
+					is_sapient = yes
+					is_robotic_species = no
+					has_psionic_species_trait = no
+					OR = {
+						has_global_flag = deassimilate_machines_installed
+						NOT ={ has_trait = trait_cybernetic }
+					}
 					count_species_pop = {
 						count > 0
 						limit = { is_owned_by = root }
@@ -61,12 +70,13 @@ country_event = {
 		}
 		every_galaxy_species = {
 			limit = {
-				is_sapient = yes
 				is_same_species = event_target:root_non_psionic_species
-				is_organic_species = yes
-				NOR = {
-					has_trait = trait_latent_psionic
-					has_trait = trait_psionic
+				is_sapient = yes
+				is_robotic_species = no
+				has_psionic_species_trait = no
+				OR = {
+					has_global_flag = deassimilate_machines_installed
+					NOT ={ has_trait = trait_cybernetic }
 				}
 			}
 			save_event_target_as = non_psionic_species
@@ -133,6 +143,7 @@ country_event = {
 	}
 	option = {
 		name = utopia.2600.a
+		trigger = { NOT = { has_origin = origin_shroudwalker_apprentice } }
 		custom_tooltip_with_params = {
 			description = MODIFY_GALAXY_SPECIES_ADD
 			description_parameters = {
@@ -140,12 +151,14 @@ country_event = {
 				TRAIT = "[This.GetLatentPsionicTraitName]"
 			}
 		}
-		custom_tooltip = ALLOW_PSI_CORPS
-		custom_tooltip = ALLOW_PSI_ARMIES
+	}
+	option = {
+		name = utopia.2600.a
+		trigger = { has_origin = origin_shroudwalker_apprentice }
 	}
 }
 
-# Transcendence
+# Great Awakening tradition
 country_event = {
 	id = utopia.2650
 	title = utopia.2650.name
@@ -154,11 +167,15 @@ country_event = {
 	show_sound = event_the_great_awakening
 	is_triggered_only = yes
 	trigger = {
+		has_tradition = tr_psionics_psionic_assimilation
 		owner_species = {
 			is_sapient = yes
-			is_organic_species = yes
-			has_trait = trait_latent_psionic
-			NOT = { has_trait = trait_psionic }
+			is_robotic_species = no
+			has_trait= { trait_latent_psionic }
+			OR = {
+				has_global_flag = deassimilate_machines_installed
+				NOT ={ has_trait = trait_cybernetic }
+			}
 		}
 	}
 	immediate = {
@@ -191,6 +208,13 @@ country_event = {
 			random_galaxy_species = {
 				limit = {
 					is_same_species = event_target:root_latent_psionic_species
+					is_sapient = yes
+					is_robotic_species = no
+					has_trait= { trait_latent_psionic }
+					OR = {
+						has_global_flag = deassimilate_machines_installed
+						NOT ={ has_trait = trait_cybernetic }
+					}
 					count_species_pop = {
 						count > 0
 						limit = { is_owned_by = root }
@@ -204,11 +228,14 @@ country_event = {
 		}
 		every_galaxy_species = {
 			limit = {
-				is_sapient = yes
 				is_same_species = event_target:root_latent_psionic_species
-				is_organic_species = yes
-				has_trait = trait_latent_psionic
-				NOT = { has_trait = trait_psionic }
+				is_sapient = yes
+				is_robotic_species = no
+				has_trait= { trait_latent_psionic }
+				OR = {
+					has_global_flag = deassimilate_machines_installed
+					NOT ={ has_trait = trait_cybernetic }
+				}
 			}
 			save_event_target_as = latent_psionic_species
 			modify_species = {
@@ -270,11 +297,6 @@ country_event = {
 				NOT = { is_same_value = root }
 			}
 			country_event = { id = utopia.2652 }
-		}
-		country_event = {
-			id = utopia.2655
-			days = 30
-			random = 20
 		}
 	}
 	option = {
