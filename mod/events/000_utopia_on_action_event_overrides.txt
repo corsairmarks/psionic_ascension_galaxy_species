@@ -171,7 +171,7 @@ country_event = {
 		owner_species = {
 			is_sapient = yes
 			is_robotic_species = no
-			has_trait= { trait_latent_psionic }
+			has_trait = trait_latent_psionic
 			OR = {
 				has_global_flag = deassimilate_machines_installed
 				NOT ={ has_trait = trait_cybernetic }
@@ -210,7 +210,7 @@ country_event = {
 					is_same_species = event_target:root_latent_psionic_species
 					is_sapient = yes
 					is_robotic_species = no
-					has_trait= { trait_latent_psionic }
+					has_trait = trait_latent_psionic
 					OR = {
 						has_global_flag = deassimilate_machines_installed
 						NOT ={ has_trait = trait_cybernetic }
@@ -231,7 +231,7 @@ country_event = {
 				is_same_species = event_target:root_latent_psionic_species
 				is_sapient = yes
 				is_robotic_species = no
-				has_trait= { trait_latent_psionic }
+				has_trait = trait_latent_psionic
 				OR = {
 					has_global_flag = deassimilate_machines_installed
 					NOT ={ has_trait = trait_cybernetic }
