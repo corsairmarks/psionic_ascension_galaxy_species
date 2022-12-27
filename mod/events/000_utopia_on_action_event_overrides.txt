@@ -10,15 +10,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_tradition = tr_psionics_adopt
-		owner_species = {
-			is_sapient = yes
-			is_robotic_species = no
-			OR = {
-				has_global_flag = assimilate_all_the_pops_installed
-				NOT = { has_trait = trait_cybernetic }
-			}
-			has_psionic_species_trait = no
-		}
 	}
 	immediate = {
 		owner_species = { save_event_target_as = root_non_psionic_species }
@@ -169,15 +160,6 @@ country_event = {
 	is_triggered_only = yes
 	trigger = {
 		has_tradition = tr_psionics_psionic_assimilation
-		owner_species = {
-			is_sapient = yes
-			is_robotic_species = no
-			has_trait = trait_latent_psionic
-			OR = {
-				has_global_flag = assimilate_all_the_pops_installed
-				NOT = { has_trait = trait_cybernetic }
-			}
-		}
 	}
 	immediate = {
 		owner_species = { save_event_target_as = root_latent_psionic_species }
