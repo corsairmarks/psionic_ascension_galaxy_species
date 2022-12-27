@@ -186,6 +186,7 @@ country_event = {
 				event_target:root_latent_psionic_species = {
 					is_robotic = no
 					has_trait = trait_latent_psionic
+					NOT = { has_trait = trait_psionic }
 				}
 				any_galaxy_species = {
 					is_exact_same_species = event_target:root_latent_psionic_species
@@ -216,6 +217,7 @@ country_event = {
 					is_sapient = yes
 					is_robotic = no
 					has_trait = trait_latent_psionic
+					NOT = { has_trait = trait_psionic }
 					OR = {
 						has_global_flag = assimilate_all_the_pops_installed
 						NOT = { has_trait = trait_cybernetic }
@@ -237,6 +239,7 @@ country_event = {
 				is_sapient = yes
 				is_robotic = no
 				has_trait = trait_latent_psionic
+				NOT = { has_trait = trait_psionic }
 				OR = {
 					has_global_flag = assimilate_all_the_pops_installed
 					NOT = { has_trait = trait_cybernetic }
