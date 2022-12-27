@@ -1,4 +1,7 @@
 name="Psionic Ascension: Even in Other Empires"
+dependencies={
+	"Leader Traits: All Eligible Species Traits"
+}
 tags={
 	"Events"
 	"Gameplay"
