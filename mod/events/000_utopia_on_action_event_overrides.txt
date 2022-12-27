@@ -14,8 +14,8 @@ country_event = {
 			is_sapient = yes
 			is_robotic_species = no
 			OR = {
-				has_global_flag = deassimilate_machines_installed
-				NOT ={ has_trait = trait_cybernetic }
+				has_global_flag = assimilate_all_the_pops_installed
+				NOT = { has_trait = trait_cybernetic }
 			}
 			has_psionic_species_trait = no
 		}
@@ -54,8 +54,8 @@ country_event = {
 					is_robotic_species = no
 					has_psionic_species_trait = no
 					OR = {
-						has_global_flag = deassimilate_machines_installed
-						NOT ={ has_trait = trait_cybernetic }
+						has_global_flag = assimilate_all_the_pops_installed
+						NOT = { has_trait = trait_cybernetic }
 					}
 					count_species_pop = {
 						count > 0
@@ -75,14 +75,15 @@ country_event = {
 				is_robotic_species = no
 				has_psionic_species_trait = no
 				OR = {
-					has_global_flag = deassimilate_machines_installed
-					NOT ={ has_trait = trait_cybernetic }
+					has_global_flag = assimilate_all_the_pops_installed
+					NOT = { has_trait = trait_cybernetic }
 				}
 			}
 			save_event_target_as = non_psionic_species
 			modify_species = {
 				species = event_target:non_psionic_species
 				add_trait = trait_latent_psionic
+				change_scoped_species = no
 				effect = {
 					save_event_target_as = latent_psionic_species
 				}
@@ -173,8 +174,8 @@ country_event = {
 			is_robotic_species = no
 			has_trait = trait_latent_psionic
 			OR = {
-				has_global_flag = deassimilate_machines_installed
-				NOT ={ has_trait = trait_cybernetic }
+				has_global_flag = assimilate_all_the_pops_installed
+				NOT = { has_trait = trait_cybernetic }
 			}
 		}
 	}
@@ -212,8 +213,8 @@ country_event = {
 					is_robotic_species = no
 					has_trait = trait_latent_psionic
 					OR = {
-						has_global_flag = deassimilate_machines_installed
-						NOT ={ has_trait = trait_cybernetic }
+						has_global_flag = assimilate_all_the_pops_installed
+						NOT = { has_trait = trait_cybernetic }
 					}
 					count_species_pop = {
 						count > 0
@@ -233,8 +234,8 @@ country_event = {
 				is_robotic_species = no
 				has_trait = trait_latent_psionic
 				OR = {
-					has_global_flag = deassimilate_machines_installed
-					NOT ={ has_trait = trait_cybernetic }
+					has_global_flag = assimilate_all_the_pops_installed
+					NOT = { has_trait = trait_cybernetic }
 				}
 			}
 			save_event_target_as = latent_psionic_species
@@ -242,6 +243,7 @@ country_event = {
 				species = event_target:latent_psionic_species
 				remove_trait = trait_latent_psionic
 				add_trait = trait_psionic
+				change_scoped_species = no
 				effect = {
 					save_event_target_as = psionic_species
 				}
