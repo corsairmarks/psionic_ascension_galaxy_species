@@ -1,5 +1,8 @@
 namespace = utopia
 
+# Modified:
+# * allow Cybernetic Pops to gain Latent Psionic if Assimilate All the Pops is installed
+# * do not set the dominant species if it is robotic
 # Psionics traditions adopt
 country_event = {
 	id = utopia.2600
@@ -15,6 +18,10 @@ country_event = {
 		owner_species = { save_event_target_as = root_non_psionic_species }
 		if = {
 			limit = {
+				event_target:root_non_psionic_species = {
+					is_robotic = no
+					has_psionic_species_trait = no
+				}
 				any_galaxy_species = {
 					is_exact_same_species = event_target:root_non_psionic_species
 					count_species_pop = {
@@ -42,7 +49,7 @@ country_event = {
 				limit = {
 					is_same_species = event_target:root_non_psionic_species
 					is_sapient = yes
-					is_robotic_species = no
+					is_robotic = no
 					has_psionic_species_trait = no
 					OR = {
 						has_global_flag = assimilate_all_the_pops_installed
@@ -63,7 +70,7 @@ country_event = {
 			limit = {
 				is_same_species = event_target:root_non_psionic_species
 				is_sapient = yes
-				is_robotic_species = no
+				is_robotic = no
 				has_psionic_species_trait = no
 				OR = {
 					has_global_flag = assimilate_all_the_pops_installed
@@ -121,15 +128,22 @@ country_event = {
 				}
 			}
 		}
-		change_dominant_species = { species = event_target:representative_pop.species }
-		observer_event = { id = observer.5 }
+		if = {
+			limit = { owner_species = { is_robotic = no } }
+			change_dominant_species = { species = event_target:representative_pop.species }
+		}
+		observer_event = {
+			id = observer.5
+		}
 		every_country = {
 			limit = {
 				is_ai = no
 				has_communications = root
 				NOT = { is_same_value = root }
 			}
-			country_event = { id = utopia.2602 }
+			country_event = {
+				id = utopia.2602
+			}
 		}
 		remove_country_flag = shroudwalker_enclave_diplomacy_engaged # Resets to fellow psionic greetings
 	}
@@ -150,6 +164,10 @@ country_event = {
 	}
 }
 
+# Modified:
+# * allow Cybernetic Pops to gain Psionic if Assimilate All the Pops is installed
+# * Psionic traits now handled by Leader Traits: All Eligible Species Traits
+# * do not set the dominant species if it is robotic
 # Great Awakening tradition
 country_event = {
 	id = utopia.2650
@@ -165,6 +183,10 @@ country_event = {
 		owner_species = { save_event_target_as = root_latent_psionic_species }
 		if = {
 			limit = {
+				event_target:root_latent_psionic_species = {
+					is_robotic = no
+					has_trait = trait_latent_psionic
+				}
 				any_galaxy_species = {
 					is_exact_same_species = event_target:root_latent_psionic_species
 					count_species_pop = {
@@ -192,7 +214,7 @@ country_event = {
 				limit = {
 					is_same_species = event_target:root_latent_psionic_species
 					is_sapient = yes
-					is_robotic_species = no
+					is_robotic = no
 					has_trait = trait_latent_psionic
 					OR = {
 						has_global_flag = assimilate_all_the_pops_installed
@@ -213,7 +235,7 @@ country_event = {
 			limit = {
 				is_same_species = event_target:root_latent_psionic_species
 				is_sapient = yes
-				is_robotic_species = no
+				is_robotic = no
 				has_trait = trait_latent_psionic
 				OR = {
 					has_global_flag = assimilate_all_the_pops_installed
@@ -270,17 +292,25 @@ country_event = {
 						}
 					}
 				}
+				# note: psionic leader traits are added by Leader Traits: All Eligible Species Traits
 			}
 		}
-		change_dominant_species = { species = event_target:representative_pop.species }
-		observer_event = { id = observer.6 }
+		if = {
+			limit = { owner_species = { is_robotic = no } }
+			change_dominant_species = { species = event_target:representative_pop.species }
+		}
+		observer_event = {
+			id = observer.6
+		}
 		every_country = {
 			limit = {
 				is_ai = no
 				has_communications = root
 				NOT = { is_same_value = root }
 			}
-			country_event = { id = utopia.2652 }
+			country_event = {
+				id = utopia.2652
+			}
 		}
 	}
 	option = {
