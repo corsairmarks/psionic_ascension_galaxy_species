@@ -28,7 +28,8 @@ Built for Stellaris version 3.6 "Cepheus."  Not compatible with achievements.
 
 ### Recommended Companion Mods
 
-[Deassimilate Machines](https://steamcommunity.com/sharedfiles/filedetails/?id=2553812372) contains much of my assimilation enhancements, _including_ allowing species to be both Psionic and Cybernetic.
+* [Assimilate All the Pops](https://steamcommunity.com/sharedfiles/filedetails/?id=2908463208) allows empires to have multiple assimilation types, and thus cybernetic species can also gain psionic traits
+* [Deassimilate Machines](https://steamcommunity.com/sharedfiles/filedetails/?id=2553812372) contains much of my assimilation enhancements, required for Assimilate All the Pops
 
 ### When to Install
 
