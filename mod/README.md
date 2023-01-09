@@ -58,6 +58,9 @@ This mod overwrites preempts two events from the base game.  Expect to see two l
     * Integrate underlying game changes - notably, adopting the Psionics tradition group does not unlock the Psi Corps or Psionic Armies directly anymore (previously the same code triggered when taking the Mind Over Matter ascension perk)
     * In a nod to the intentional changes by Paradox regarding Psionic/Cybernetic incompatibility - only non-Cybernetic species will gain Latent Psionic/Psionic species traits
     * The above restriction between Psionic and Cybernetic species traits can be removed with my mod [Deassimilate Machines](https://steamcommunity.com/sharedfiles/filedetails/?id=2553812372)
+* 4.0.0 Compatibility triggers
+    * Add a compatibility trigger for other mods to check whether this one is active
+    * Consume the compatibility trigger from another mod
 
 ## Source Code
 
