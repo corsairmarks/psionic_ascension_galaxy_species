@@ -22,6 +22,10 @@ Mods altering or allowing assimilation/ascension with different conditions aren'
 
 Built for Stellaris version 3.6 "Cepheus."  Not compatible with achievements.
 
+### When to Install
+
+This mod can be safely added to or removed from your savegame after the game has started.  It is implemented through events without adding or removing gameplay objects.  If you remove it, you will keep any modified species and leaders of those species with their existing traits, but further empires adopting Psionics traditions group or the "Great Awakening" tradition will only upgrade their own Pops and leaders.  Back up your savegame before trying to remove a mod.
+
 ### Required Mod Dependencies
 
 [Leader Traits: All Eligible Species Traits](https://steamcommunity.com/sharedfiles/filedetails/?id=2499031295) - this mod ensures your leaders always gain the correct leader traits (such as Psionic) and contains a minor enhancement that leaders of _any_ Latent Psionic species have a chance to manifest full Psionic powers and gain the appropriate leader trait. This was previously restricted to occur for leaders that are both Latent Psionic and the same species as the empire's founder species.
@@ -30,10 +34,6 @@ Built for Stellaris version 3.6 "Cepheus."  Not compatible with achievements.
 
 * [Assimilate All the Pops](https://steamcommunity.com/sharedfiles/filedetails/?id=2908463208) allows empires to have multiple assimilation types, and thus cybernetic species can also gain psionic traits
 * [Deassimilate Machines](https://steamcommunity.com/sharedfiles/filedetails/?id=2553812372) contains much of my assimilation enhancements, required for Assimilate All the Pops
-
-### When to Install
-
-This mod can be safely added to or removed from your savegame after the game has started.  It is implemented through events without adding or removing gameplay objects.  If you remove it, you will keep any modified species and leaders of those species with their existing traits, but further empires adopting Psionics traditions group or the "Great Awakening" tradition will only upgrade their own Pops and leaders.  Back up your savegame before trying to remove a mod.
 
 ## Known Issues
 
