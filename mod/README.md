@@ -20,7 +20,7 @@ Preempts the `utopia.2600` event that is responsible for the initial species upg
 
 Mods altering or allowing assimilation/ascension with different conditions aren't always a conflict.
 
-Built for Stellaris version 3.6 "Cepheus."  Not compatible with achievements.
+Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements.
 
 ### When to Install
 
@@ -61,6 +61,7 @@ This mod overwrites preempts two events from the base game.  Expect to see two l
 * 4.0.0 Compatibility triggers
     * Add a compatibility trigger for other mods to check whether this one is active
     * Consume the compatibility trigger from another mod
+* 5.0.0 Update for Stellaris version 3.7 "Canis Minor" - integrate underlying game changes
 
 ## Source Code
 
