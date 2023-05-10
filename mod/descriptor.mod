@@ -8,7 +8,7 @@ tags={
 	"Leaders"
 	"Species"
 }
-version="5.0.0"
+version="6.0.0"
 picture="thumbnail.png"
-supported_version="3.7.*"
+supported_version="3.8.*"
 remote_file_id="2601239912"

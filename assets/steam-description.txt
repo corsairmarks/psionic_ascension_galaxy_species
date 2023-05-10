@@ -17,7 +17,7 @@ Preempts the [b]utopia.2600[/b] event that is responsible for the initial specie
 
 Mods altering or allowing assimilation/ascension with different conditions aren't always a conflict.
 
-Built for Stellaris version 3.7 "Canis Minor."  Not compatible with achievements.
+Built for Stellaris version 3.8 "Gemini."  Not compatible with achievements.
 
 [h3]When to Install[/h3]
 This mod can be safely added to or removed from your savegame after the game has started.  It is implemented through events without adding or removing gameplay objects.  If you remove it, you will keep any modified species and leaders of those species with their existing traits, but further empires adopting Psionics traditions group or the "Great Awakening" tradition will only upgrade their own Pops and leaders.  Back up your savegame before trying to remove a mod.
