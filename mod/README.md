@@ -47,10 +47,10 @@ This mod overwrites preempts two events from the base game.  Expect to see two l
 ## Changelog
 
 * 1.0.0 Initial version
-* 1.1.0 Mark as compatible for Stellaris 3.1 "Lem" - no functionality changes
-* 1.2.0 Mark as compatible for Stellaris 3.2 "Herbert" - no script changes
+* 1.1.0 Mark as compatible with Stellaris version 3.1 "Lem" - no functionality changes
+* 1.2.0 Mark as compatible with Stellaris version 3.2 "Herbert" - no script changes
 * 1.2.1 Fix not properly iterating all subspecies
-* 1.3.0 Mark as compatible for Stellaris 3.3 "Libra" - no script changes
+* 1.3.0 Mark as compatible with Stellaris version 3.3 "Libra" - no script changes
 * 2.0.0 Update for Stellaris version 3.4 "Cepheus"
     * Update code to account for hired (mercenary) fleets
     * Integrate underlying game change to account for the Shroudwalker enclave
